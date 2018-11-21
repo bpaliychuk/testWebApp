@@ -31,7 +31,7 @@ class ViewController: UIViewController, WKUIDelegate, WKNavigationDelegate {
     private func loadLocalSite() {
         let libraryURLString = FileManager.default.urls(for: .libraryDirectory, in: .userDomainMask).last?.path
         let indexURLString = libraryURLString! + "/Site/index.html"
-        let url = URL(fileURLWithPath: indexURLString) //URL(string: indexURLString)!
+        let url = URL(fileURLWithPath: indexURLString)
         webView.loadFileURL(url, allowingReadAccessTo: url)
         let request = URLRequest(url: url)
         webView.load(request)

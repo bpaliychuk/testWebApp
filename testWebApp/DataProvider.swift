@@ -30,7 +30,8 @@ class DataProvider {
         "http://bpaliychukwebsitetest.xp3.biz/documents/exempleExel.xlsx",
         "http://bpaliychukwebsitetest.xp3.biz/documents/exemplePdf.pdf",
         "http://bpaliychukwebsitetest.xp3.biz/documents/exemplePptx.pptx",
-        "http://bpaliychukwebsitetest.xp3.biz/documents/tests-example.xls"
+        "http://bpaliychukwebsitetest.xp3.biz/documents/tests-example.xls",
+        "http://bpaliychukwebsitetest.xp3.biz/img/test_logo.png",
     ]
     private let indexFileName = "index.html"
     
