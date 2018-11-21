@@ -32,8 +32,9 @@ class DataProvider {
         "http://bpaliychukwebsitetest.xp3.biz/documents/exemplePptx.pptx",
         "http://bpaliychukwebsitetest.xp3.biz/documents/tests-example.xls"
     ]
+    private let indexFileName = "index.html"
     
-    func load() {
+    func load(completion: @escaping () -> Void) {
         
         let group = DispatchGroup()
         
@@ -43,7 +44,11 @@ class DataProvider {
             let task = URLSession.shared.downloadTask(with: url) { localURL, urlResponse, error in
                 if let localURL = localURL {
                     print(localURL)
-                    self.saveDownloadedFile(localUrl: localURL.path, absoluteUrl: urlResponse!.url!)
+                    if urlResponse?.url?.lastPathComponent == self.indexFileName {
+                        self.replaceLinksInIndexFile(localUrl: localURL.path)
+                    } else {
+                        self.saveDownloadedFile(localUrl: localURL.path, absoluteUrl: urlResponse!.url!)
+                    }
                     group.leave()
                 }
             }
@@ -53,8 +58,10 @@ class DataProvider {
         
         group.notify(queue: DispatchQueue.main) {
             print("Download task finished")
+            completion()
         }
     }
+    
     
     private func saveDownloadedFile(localUrl: String, absoluteUrl: URL) {
         let fileManager = FileManager.default
@@ -74,6 +81,27 @@ class DataProvider {
         let fullLocalPath = newLocalUrl + absoluteUrl.lastPathComponent
         let fileData = fileManager.contents(atPath: localUrl)
         fileManager.createFile(atPath: fullLocalPath, contents: fileData, attributes: nil)
+        try? fileManager.removeItem(atPath: localUrl)
+    }
+    
+    
+    private func replaceLinksInIndexFile(localUrl: String) {
+        guard let beforeReplaceString = try? String(contentsOfFile: localUrl) else {
+            return
+        }
+        let fileManager = FileManager.default
+        let libraryURLString = fileManager.urls(for: .libraryDirectory, in: .userDomainMask).last?.path
+        
+        let mainFolder = libraryURLString! + "/Site/"
+        var isDir : ObjCBool = true
+        if !fileManager.fileExists(atPath: mainFolder, isDirectory: &isDir) {
+            try? fileManager.createDirectory(atPath: mainFolder, withIntermediateDirectories: true, attributes: nil)
+        }
+        let replacedString = beforeReplaceString.replacingOccurrences(of: baseURL, with: mainFolder)
+        
+        let data = replacedString.data(using: .utf8)
+        let fullLocalPath = mainFolder + indexFileName
+        fileManager.createFile(atPath: fullLocalPath, contents: data, attributes: nil)
         try? fileManager.removeItem(atPath: localUrl)
     }
 }
