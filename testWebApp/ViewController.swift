@@ -8,6 +8,7 @@
 
 import UIKit
 import WebKit
+import Swifter
 
 class ViewController: UIViewController, WKUIDelegate, WKNavigationDelegate {
 
@@ -25,7 +26,20 @@ class ViewController: UIViewController, WKUIDelegate, WKNavigationDelegate {
     private func loadFiles() {
         DataProvider.shared.load {
             self.loadLocalSite()
+            //self.loadLocalWebServer()
         }
+    }
+    
+    private func loadLocalWebServer() {
+        do {
+            let server = demoServer(Bundle.main.resourcePath!)
+            try server.start(9080)
+            //self.server = server
+        } catch {
+            print("Server start error: \(error)")
+        }
+        
+        webView.load(URLRequest(url: URL(string: "http://localhost:9080")!))
     }
     
     private func loadLocalSite() {
