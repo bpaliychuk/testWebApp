@@ -44,12 +44,7 @@ class DataProvider {
             group.enter()
             let task = URLSession.shared.downloadTask(with: url) { localURL, urlResponse, error in
                 if let localURL = localURL {
-                    print(localURL)
-                    if urlResponse?.url?.lastPathComponent == self.indexFileName {
-                        self.replaceLinksInIndexFile(localUrl: localURL.path)
-                    } else {
-                        self.saveDownloadedFile(localUrl: localURL.path, absoluteUrl: urlResponse!.url!)
-                    }
+                    self.saveDownloadedFile(localUrl: localURL.path, absoluteUrl: urlResponse!.url!)
                     group.leave()
                 }
             }
