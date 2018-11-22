@@ -21,8 +21,8 @@ class ViewController: UIViewController, WKUIDelegate, WKNavigationDelegate {
         
         webView.uiDelegate = self
         webView.navigationDelegate = self
-        //loadFiles()
-        loadLocalWebServer()
+        loadFiles()
+        //loadLocalWebServer()
         //loadLocalSite()
     }
 
