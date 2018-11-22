@@ -14,31 +14,34 @@ class ViewController: UIViewController, WKUIDelegate, WKNavigationDelegate {
 
     @IBOutlet weak var webView: WKWebView!
     
+    private var webServer: CustomWebServer?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         webView.uiDelegate = self
         webView.navigationDelegate = self
-        loadFiles()
+        //loadFiles()
+        loadLocalWebServer()
+        //loadLocalSite()
     }
 
     
     private func loadFiles() {
         DataProvider.shared.load {
-            self.loadLocalSite()
-            //self.loadLocalWebServer()
+            //self.loadLocalSite()
+            self.loadLocalWebServer()
         }
     }
     
     private func loadLocalWebServer() {
-        do {
-            let server = demoServer(Bundle.main.resourcePath!)
-            try server.start(9080)
-            //self.server = server
-        } catch {
-            print("Server start error: \(error)")
-        }
         
+        let libraryPathString = NSSearchPathForDirectoriesInDomains(.libraryDirectory, .userDomainMask, true).first!
+        
+        let basePathString = libraryPathString + "/Site";
+        
+        webServer = CustomWebServer(basePathString)
+        webServer?.start(9080)
         webView.load(URLRequest(url: URL(string: "http://localhost:9080")!))
     }
     

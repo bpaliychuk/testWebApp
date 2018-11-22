@@ -30,6 +30,7 @@
 		242F40DB21A5BA9B0001C1B2 /* String+SHA1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 242F40A021A5BA280001C1B2 /* String+SHA1.swift */; };
 		242F40DC21A5BA9B0001C1B2 /* WebSockets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 242F408E21A5BA270001C1B2 /* WebSockets.swift */; };
 		242F40DE21A5BAFD0001C1B2 /* SwifteriOS.h in Headers */ = {isa = PBXBuildFile; fileRef = 242F409221A5BA280001C1B2 /* SwifteriOS.h */; };
+		242F40E021A6C44C0001C1B2 /* CustomWebServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 242F40DF21A6C44C0001C1B2 /* CustomWebServer.swift */; };
 		381763EF21A4218B003621A1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 381763EE21A4218B003621A1 /* AppDelegate.swift */; };
 		381763F121A4218B003621A1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 381763F021A4218B003621A1 /* ViewController.swift */; };
 		381763F421A4218B003621A1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 381763F221A4218B003621A1 /* Main.storyboard */; };
@@ -86,6 +87,7 @@
 		242F40A021A5BA280001C1B2 /* String+SHA1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "String+SHA1.swift"; path = "testWebApp/Swifter/String+SHA1.swift"; sourceTree = SOURCE_ROOT; };
 		242F40A121A5BA280001C1B2 /* HttpParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HttpParser.swift; path = testWebApp/Swifter/HttpParser.swift; sourceTree = SOURCE_ROOT; };
 		242F40BC21A5BA770001C1B2 /* Swifter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Swifter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		242F40DF21A6C44C0001C1B2 /* CustomWebServer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomWebServer.swift; sourceTree = "<group>"; };
 		381763EB21A4218B003621A1 /* testWebApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = testWebApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		381763EE21A4218B003621A1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		381763F021A4218B003621A1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -172,6 +174,7 @@
 				381763F521A4218C003621A1 /* Assets.xcassets */,
 				381763F721A4218C003621A1 /* LaunchScreen.storyboard */,
 				381763FA21A4218C003621A1 /* Info.plist */,
+				242F40DF21A6C44C0001C1B2 /* CustomWebServer.swift */,
 			);
 			path = testWebApp;
 			sourceTree = "<group>";
@@ -316,6 +319,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				242F40E021A6C44C0001C1B2 /* CustomWebServer.swift in Sources */,
 				3817640121A42796003621A1 /* DataProvider.swift in Sources */,
 				381763F121A4218B003621A1 /* ViewController.swift in Sources */,
 				381763EF21A4218B003621A1 /* AppDelegate.swift in Sources */,
