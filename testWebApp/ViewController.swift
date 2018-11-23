@@ -23,9 +23,9 @@ class ViewController: UIViewController, WKUIDelegate, WKNavigationDelegate {
 
     
     private func loadFiles() {
-        DataProvider.shared.load {
-            self.loadLocalSite()
-        }
+//        DataProvider.shared.load {
+//            self.loadLocalSite()
+//        }
     }
     
     private func loadLocalSite() {
