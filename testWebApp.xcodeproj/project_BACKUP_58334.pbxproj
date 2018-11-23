@@ -7,7 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0A48A0FB5770261A851BA448 /* Pods_testWebApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 935410AC0C0606ADBE1D3612 /* Pods_testWebApp.framework */; };
+<<<<<<< HEAD
+		197659E3A26F5AF584AF595F /* Pods_testWebApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 935410AC0C0606ADBE1D3612 /* Pods_testWebApp.framework */; };
+=======
 		242F40C321A5BA770001C1B2 /* Swifter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 242F40BC21A5BA770001C1B2 /* Swifter.framework */; };
 		242F40C421A5BA770001C1B2 /* Swifter.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 242F40BC21A5BA770001C1B2 /* Swifter.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		242F40C921A5BA9A0001C1B2 /* DemoServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 242F408F21A5BA270001C1B2 /* DemoServer.swift */; };
@@ -32,8 +34,9 @@
 		242F40DC21A5BA9B0001C1B2 /* WebSockets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 242F408E21A5BA270001C1B2 /* WebSockets.swift */; };
 		242F40DE21A5BAFD0001C1B2 /* SwifteriOS.h in Headers */ = {isa = PBXBuildFile; fileRef = 242F409221A5BA280001C1B2 /* SwifteriOS.h */; };
 		242F40E021A6C44C0001C1B2 /* CustomWebServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 242F40DF21A6C44C0001C1B2 /* CustomWebServer.swift */; };
+>>>>>>> aed3eea5a4d28a7fd394888a9da8c018d4d40ac4
 		381763EF21A4218B003621A1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 381763EE21A4218B003621A1 /* AppDelegate.swift */; };
-		381763F121A4218B003621A1 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 381763F021A4218B003621A1 /* WebViewController.swift */; };
+		381763F121A4218B003621A1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 381763F021A4218B003621A1 /* ViewController.swift */; };
 		381763F421A4218B003621A1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 381763F221A4218B003621A1 /* Main.storyboard */; };
 		381763F621A4218C003621A1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 381763F521A4218C003621A1 /* Assets.xcassets */; };
 		381763F921A4218C003621A1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 381763F721A4218C003621A1 /* LaunchScreen.storyboard */; };
@@ -66,6 +69,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+<<<<<<< HEAD
+		04A159CB9FD13BFA0D4502A0 /* Pods-testWebApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-testWebApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-testWebApp/Pods-testWebApp.debug.xcconfig"; sourceTree = "<group>"; };
+=======
 		242F408C21A5BA270001C1B2 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = testWebApp/Swifter/Info.plist; sourceTree = SOURCE_ROOT; };
 		242F408D21A5BA270001C1B2 /* HttpRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HttpRequest.swift; path = testWebApp/Swifter/HttpRequest.swift; sourceTree = SOURCE_ROOT; };
 		242F408E21A5BA270001C1B2 /* WebSockets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WebSockets.swift; path = testWebApp/Swifter/WebSockets.swift; sourceTree = SOURCE_ROOT; };
@@ -90,9 +96,10 @@
 		242F40A121A5BA280001C1B2 /* HttpParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HttpParser.swift; path = testWebApp/Swifter/HttpParser.swift; sourceTree = SOURCE_ROOT; };
 		242F40BC21A5BA770001C1B2 /* Swifter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Swifter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		242F40DF21A6C44C0001C1B2 /* CustomWebServer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomWebServer.swift; sourceTree = "<group>"; };
+>>>>>>> aed3eea5a4d28a7fd394888a9da8c018d4d40ac4
 		381763EB21A4218B003621A1 /* testWebApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = testWebApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		381763EE21A4218B003621A1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		381763F021A4218B003621A1 /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
+		381763F021A4218B003621A1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		381763F321A4218B003621A1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		381763F521A4218C003621A1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		381763F821A4218C003621A1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -102,7 +109,6 @@
 		3817640421A6ACA3003621A1 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		6657C20AADE73CBC2B0E5D64 /* Pods-testWebApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-testWebApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-testWebApp/Pods-testWebApp.release.xcconfig"; sourceTree = "<group>"; };
 		935410AC0C0606ADBE1D3612 /* Pods_testWebApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_testWebApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		A4446D2401AB1F5E02B389F0 /* Pods-testWebApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-testWebApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-testWebApp/Pods-testWebApp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,8 +123,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+<<<<<<< HEAD
+				197659E3A26F5AF584AF595F /* Pods_testWebApp.framework in Frameworks */,
+=======
 				242F40C321A5BA770001C1B2 /* Swifter.framework in Frameworks */,
-				0A48A0FB5770261A851BA448 /* Pods_testWebApp.framework in Frameworks */,
+>>>>>>> aed3eea5a4d28a7fd394888a9da8c018d4d40ac4
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -179,7 +188,7 @@
 			children = (
 				3817640321A6AAD6003621A1 /* testWebApp.entitlements */,
 				381763EE21A4218B003621A1 /* AppDelegate.swift */,
-				381763F021A4218B003621A1 /* WebViewController.swift */,
+				381763F021A4218B003621A1 /* ViewController.swift */,
 				3817640421A6ACA3003621A1 /* LoginViewController.swift */,
 				3817640021A42796003621A1 /* DataProvider.swift */,
 				381763F221A4218B003621A1 /* Main.storyboard */,
@@ -202,8 +211,8 @@
 		D9FD09C8A77F0BC5DC6489E7 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
+				04A159CB9FD13BFA0D4502A0 /* Pods-testWebApp.debug.xcconfig */,
 				6657C20AADE73CBC2B0E5D64 /* Pods-testWebApp.release.xcconfig */,
-				A4446D2401AB1F5E02B389F0 /* Pods-testWebApp.debug.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -248,8 +257,11 @@
 				381763E721A4218B003621A1 /* Sources */,
 				381763E821A4218B003621A1 /* Frameworks */,
 				381763E921A4218B003621A1 /* Resources */,
+<<<<<<< HEAD
+				7F6E8ADA1B6135253B17AAFC /* [CP] Embed Pods Frameworks */,
+=======
 				242F40C821A5BA770001C1B2 /* Embed Frameworks */,
-				17923C20E53A0B2185B41D3F /* [CP] Embed Pods Frameworks */,
+>>>>>>> aed3eea5a4d28a7fd394888a9da8c018d4d40ac4
 			);
 			buildRules = (
 			);
@@ -324,24 +336,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		17923C20E53A0B2185B41D3F /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-testWebApp/Pods-testWebApp-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/ADALiOS/ADALiOS.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ADALiOS.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-testWebApp/Pods-testWebApp-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		2BC256A95C3CD7E5206446FA /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -358,6 +352,24 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7F6E8ADA1B6135253B17AAFC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-testWebApp/Pods-testWebApp-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/ADALiOS/ADALiOS.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ADALiOS.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-testWebApp/Pods-testWebApp-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -394,10 +406,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+<<<<<<< HEAD
 				3817640521A6ACA3003621A1 /* LoginViewController.swift in Sources */,
+=======
 				242F40E021A6C44C0001C1B2 /* CustomWebServer.swift in Sources */,
+>>>>>>> aed3eea5a4d28a7fd394888a9da8c018d4d40ac4
 				3817640121A42796003621A1 /* DataProvider.swift in Sources */,
-				381763F121A4218B003621A1 /* WebViewController.swift in Sources */,
+				381763F121A4218B003621A1 /* ViewController.swift in Sources */,
 				381763EF21A4218B003621A1 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -606,7 +621,7 @@
 		};
 		381763FE21A4218C003621A1 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A4446D2401AB1F5E02B389F0 /* Pods-testWebApp.debug.xcconfig */;
+			baseConfigurationReference = 04A159CB9FD13BFA0D4502A0 /* Pods-testWebApp.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;

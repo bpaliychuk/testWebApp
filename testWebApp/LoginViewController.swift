@@ -45,7 +45,8 @@ class LoginViewController: UIViewController {
     
     func loadWebView() {
         DataProvider.shared.load(baseurl: "https://fidelitypublic-pavelma.msappproxy.net", accessToken: self.accessToken) {
-            print("finished")
+            print("download finished")
+            WebViewController.show(fromVC: self)
         }
     }
 }
