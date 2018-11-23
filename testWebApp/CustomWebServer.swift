@@ -12,26 +12,41 @@ import Swifter
 public class CustomWebServer {
     
     private var server: HttpServer!
+    private var secretKey: String
+    
     private var publicDir: String
     
-    public init(_ publicDir: String) {
+    public init(publicDir: String, secretKey:String) {
+        
         server = HttpServer()
         self.publicDir = publicDir
+        self.secretKey = secretKey
         
         server.GET["/:path"] = { r in
             var filePath = r.path == "/" ? "/index.html" : r.path;
-            filePath = publicDir + filePath;
-            var body = "";
+            filePath = publicDir + filePath
+            let fileURL = URL(fileURLWithPath: filePath)
+            
+            guard let cookies = r.headers["cookie"] else {
+                return HttpResponse.notFound
+            }
+
+            if cookies.range(of:"localWebServerKey="+secretKey) == nil {
+                return HttpResponse.notFound
+            }
+            //var body = "";
             var data: Data!
+            
+            
             
             //reading
             do {
                 do {
-                    data = try Data(contentsOf: URL(fileURLWithPath: filePath))
+                    data = try Data(contentsOf: fileURL)
                 } catch {
                     return HttpResponse.notFound
                 }
-                body = try String(contentsOf: URL(fileURLWithPath: filePath), encoding: .utf8)
+                //body = try String(contentsOf: fileURL, encoding: .utf8)
             }
             catch {/* error handling here */}
             

@@ -40,9 +40,28 @@ class ViewController: UIViewController, WKUIDelegate, WKNavigationDelegate {
         
         let basePathString = libraryPathString + "/Site";
         
-        webServer = CustomWebServer(basePathString)
+        webServer = CustomWebServer(publicDir: basePathString, secretKey: "qwerty123" )
         webServer?.start(9080)
+        
+        let cookie = HTTPCookie(properties: [
+            .domain: "localhost",
+            .path: "/",
+            .name: "localWebServerKey",
+            .value: "qwerty123",
+            ])!
+        
+        let cookieDummy = HTTPCookie(properties: [
+            .domain: "localhost",
+            .path: "/",
+            .name: "asdfr",
+            .value: "dfgdfg",
+            ])!
+        
+        webView.configuration.websiteDataStore.httpCookieStore.setCookie(cookie)
+        webView.configuration.websiteDataStore.httpCookieStore.setCookie(cookieDummy)
         webView.load(URLRequest(url: URL(string: "http://localhost:9080")!))
+        
+        
     }
     
     private func loadLocalSite() {
