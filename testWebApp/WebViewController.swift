@@ -10,11 +10,19 @@ import UIKit
 import WebKit
 import Swifter
 
-class ViewController: UIViewController, WKUIDelegate, WKNavigationDelegate {
+class WebViewController: UIViewController, WKUIDelegate, WKNavigationDelegate {
 
     @IBOutlet weak var webView: WKWebView!
     
     private var webServer: CustomWebServer?
+    
+    
+    static func show(fromVC: UIViewController) {
+        let main = UIStoryboard(name: "Main", bundle: nil)
+        let vc = main.instantiateViewController(withIdentifier: "WebViewController") as? WebViewController
+        fromVC.present(vc!, animated: true, completion: nil)
+    }
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,10 +36,13 @@ class ViewController: UIViewController, WKUIDelegate, WKNavigationDelegate {
 
     
     private func loadFiles() {
-        DataProvider.shared.load {
+
+
+//        DataProvider.shared.load {
             //self.loadLocalSite()
-            self.loadLocalWebServer()
-        }
+//            self.loadLocalWebServer()
+//        }
+        self.loadLocalWebServer()
     }
     
     private func loadLocalWebServer() {
