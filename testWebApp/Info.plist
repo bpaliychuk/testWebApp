@@ -2,6 +2,22 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>LSApplicationQueriesSchemes</key>
+	<array>
+		<string>https-intunemam</string>
+		<string>http-intunemam</string>
+	</array>
+	<key>IntuneMAMSettings</key>
+	<dict>
+		<key>ADALRedirectUri</key>
+		<string>https://iOSTest/some/test/app</string>
+		<key>ADALAuthority</key>
+		<string>17d4dcc9-ef32-44ec-b26a-51b8aea000d8</string>
+		<key>ADALClientId</key>
+		<string>f3c59e7b-24f1-4608-9628-69b6ffd5e0ca</string>
+		<key>MainStoryboardFile</key>
+		<string>Main</string>
+	</dict>
 	<key>CFBundleURLTypes</key>
 	<array>
 		<dict>

@@ -46,7 +46,7 @@ class DataProvider {
             
             URLSession.shared.dataTask(with: request) { (data, response, error) in
                 group.leave()
-                if let response = response {
+                if let response = response as? HTTPURLResponse {
                     print(response.url)
                     self.saveWithData(baseurl: baseurl, data: data!, url: response.url!)
                 }

@@ -39,6 +39,19 @@
 		381763F921A4218C003621A1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 381763F721A4218C003621A1 /* LaunchScreen.storyboard */; };
 		3817640121A42796003621A1 /* DataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3817640021A42796003621A1 /* DataProvider.swift */; };
 		3817640521A6ACA3003621A1 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3817640421A6ACA3003621A1 /* LoginViewController.swift */; };
+		3851779A21B8286D0082EF35 /* IntuneMAM.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3851779921B8286D0082EF35 /* IntuneMAM.framework */; };
+		3851779C21B830500082EF35 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3851779B21B830500082EF35 /* MessageUI.framework */; };
+		3851779E21B830590082EF35 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3851779D21B830590082EF35 /* Security.framework */; };
+		385177A021B830630082EF35 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3851779F21B830630082EF35 /* MobileCoreServices.framework */; };
+		385177A221B830700082EF35 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 385177A121B830700082EF35 /* libsqlite3.tbd */; };
+		385177A421B8307B0082EF35 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 385177A321B8307B0082EF35 /* libc++.tbd */; };
+		385177A621B830830082EF35 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 385177A521B830830082EF35 /* ImageIO.framework */; };
+		385177A821B8308A0082EF35 /* LocalAuthentication.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 385177A721B8308A0082EF35 /* LocalAuthentication.framework */; };
+		385177AA21B830930082EF35 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 385177A921B830930082EF35 /* AudioToolbox.framework */; };
+		385177AC21B8309D0082EF35 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 385177AB21B8309D0082EF35 /* QuartzCore.framework */; };
+		385177AE21B830A20082EF35 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 385177AD21B830A20082EF35 /* WebKit.framework */; };
+		385177AF21B838AB0082EF35 /* IntuneMAM.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3851779921B8286D0082EF35 /* IntuneMAM.framework */; };
+		385177B021B838AB0082EF35 /* IntuneMAM.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3851779921B8286D0082EF35 /* IntuneMAM.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +72,7 @@
 			dstSubfolderSpec = 10;
 			files = (
 				242F40C421A5BA770001C1B2 /* Swifter.framework in Embed Frameworks */,
+				385177B021B838AB0082EF35 /* IntuneMAM.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -100,6 +114,17 @@
 		3817640021A42796003621A1 /* DataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataProvider.swift; sourceTree = "<group>"; };
 		3817640321A6AAD6003621A1 /* testWebApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = testWebApp.entitlements; sourceTree = "<group>"; };
 		3817640421A6ACA3003621A1 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		3851779921B8286D0082EF35 /* IntuneMAM.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = IntuneMAM.framework; sourceTree = "<group>"; };
+		3851779B21B830500082EF35 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		3851779D21B830590082EF35 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		3851779F21B830630082EF35 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		385177A121B830700082EF35 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		385177A321B8307B0082EF35 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		385177A521B830830082EF35 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
+		385177A721B8308A0082EF35 /* LocalAuthentication.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = LocalAuthentication.framework; path = System/Library/Frameworks/LocalAuthentication.framework; sourceTree = SDKROOT; };
+		385177A921B830930082EF35 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		385177AB21B8309D0082EF35 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		385177AD21B830A20082EF35 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		6657C20AADE73CBC2B0E5D64 /* Pods-testWebApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-testWebApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-testWebApp/Pods-testWebApp.release.xcconfig"; sourceTree = "<group>"; };
 		935410AC0C0606ADBE1D3612 /* Pods_testWebApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_testWebApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4446D2401AB1F5E02B389F0 /* Pods-testWebApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-testWebApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-testWebApp/Pods-testWebApp.debug.xcconfig"; sourceTree = "<group>"; };
@@ -117,7 +142,19 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				385177AE21B830A20082EF35 /* WebKit.framework in Frameworks */,
+				385177AC21B8309D0082EF35 /* QuartzCore.framework in Frameworks */,
+				385177AA21B830930082EF35 /* AudioToolbox.framework in Frameworks */,
+				385177A821B8308A0082EF35 /* LocalAuthentication.framework in Frameworks */,
+				385177A621B830830082EF35 /* ImageIO.framework in Frameworks */,
+				385177A421B8307B0082EF35 /* libc++.tbd in Frameworks */,
+				385177A221B830700082EF35 /* libsqlite3.tbd in Frameworks */,
+				385177A021B830630082EF35 /* MobileCoreServices.framework in Frameworks */,
+				3851779E21B830590082EF35 /* Security.framework in Frameworks */,
+				385177AF21B838AB0082EF35 /* IntuneMAM.framework in Frameworks */,
+				3851779C21B830500082EF35 /* MessageUI.framework in Frameworks */,
 				242F40C321A5BA770001C1B2 /* Swifter.framework in Frameworks */,
+				3851779A21B8286D0082EF35 /* IntuneMAM.framework in Frameworks */,
 				0A48A0FB5770261A851BA448 /* Pods_testWebApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -194,6 +231,17 @@
 		68C023233B17207791A853B2 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				385177AD21B830A20082EF35 /* WebKit.framework */,
+				385177AB21B8309D0082EF35 /* QuartzCore.framework */,
+				385177A921B830930082EF35 /* AudioToolbox.framework */,
+				385177A721B8308A0082EF35 /* LocalAuthentication.framework */,
+				385177A521B830830082EF35 /* ImageIO.framework */,
+				385177A321B8307B0082EF35 /* libc++.tbd */,
+				385177A121B830700082EF35 /* libsqlite3.tbd */,
+				3851779F21B830630082EF35 /* MobileCoreServices.framework */,
+				3851779D21B830590082EF35 /* Security.framework */,
+				3851779B21B830500082EF35 /* MessageUI.framework */,
+				3851779921B8286D0082EF35 /* IntuneMAM.framework */,
 				935410AC0C0606ADBE1D3612 /* Pods_testWebApp.framework */,
 			);
 			name = Frameworks;
@@ -613,6 +661,10 @@
 				CODE_SIGN_ENTITLEMENTS = testWebApp/testWebApp.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = D6H4TCR3D8;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = testWebApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -634,6 +686,10 @@
 				CODE_SIGN_ENTITLEMENTS = testWebApp/testWebApp.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = D6H4TCR3D8;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = testWebApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

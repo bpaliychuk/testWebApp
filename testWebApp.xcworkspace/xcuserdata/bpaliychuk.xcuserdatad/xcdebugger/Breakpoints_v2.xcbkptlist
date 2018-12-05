@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "testWebApp/DataProvider.swift"
-            timestampString = "564599383.841671"
+            timestampString = "564668846.0269589"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "115"
-            endingLineNumber = "115">
+            startingLineNumber = "83"
+            endingLineNumber = "83">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -24,11 +24,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "testWebApp/DataProvider.swift"
-            timestampString = "564599383.842949"
+            timestampString = "564668846.027317"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "100"
-            endingLineNumber = "100">
+            startingLineNumber = "83"
+            endingLineNumber = "83">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -38,11 +38,75 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "testWebApp/DataProvider.swift"
-            timestampString = "564599383.8443249"
+            timestampString = "564668846.027604"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "82"
-            endingLineNumber = "82">
+            startingLineNumber = "83"
+            endingLineNumber = "83">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "testWebApp/LoginViewController.swift"
+            timestampString = "565721617.601463"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "46"
+            endingLineNumber = "46"
+            landmarkName = "loginAction(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "testWebApp/LoginViewController.swift"
+            timestampString = "565721617.601969"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "65"
+            endingLineNumber = "65"
+            landmarkName = "policyRequest(with:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "testWebApp/LoginViewController.swift"
+            timestampString = "565721617.602303"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "72"
+            endingLineNumber = "72"
+            landmarkName = "enrollmentRequest(with:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "testWebApp/LoginViewController.swift"
+            timestampString = "565721617.602615"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "79"
+            endingLineNumber = "79"
+            landmarkName = "unenrollRequest(with:)"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
